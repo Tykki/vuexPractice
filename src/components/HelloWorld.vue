@@ -35,7 +35,7 @@ export default {
   },
   methods: {
     ...mapMutations(['ADD_LINK']),
-      ...mapActions(['removeLink']),
+    ...mapActions(['removeLink']),
     addLink() {
       this.ADD_LINK(this.newLink)
       this.newLink = ''

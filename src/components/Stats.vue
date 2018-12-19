@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import { mapGetters, mapMutations, mapActions } from 'vuex'
+import { mapGetters, mapActions } from 'vuex'
 
 export default {
   name: 'Stats',
@@ -21,7 +21,6 @@ export default {
     ...mapGetters(['linkCount'])
   },
   methods: {
-    ...mapMutations(['Remove_All']),
     ...mapActions(['removeAll']),
     rmAll() {
       this.removeAll().then(() => {
